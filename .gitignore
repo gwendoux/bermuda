@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+config.json
+target
+.sonar
+*.tar.gz
+.DS_Store
+
+*.min.css
+*.min.js
+*.map
+/dist/
