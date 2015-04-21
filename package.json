@@ -1,0 +1,19 @@
+{
+  "name": "bermuda",
+  "version": "1.0.0",
+  "description": "shorten your urls",
+  "main": "app.js",
+  "scripts": {
+    "test": "test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gwendoux@github.com/gwendoux/bermuda.git"
+  },
+  "author": "gwendoux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwendoux/bermuda/issues"
+  },
+  "homepage": "https://github.com/gwendoux/bermuda"
+}
