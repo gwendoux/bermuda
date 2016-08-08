@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "cwd": "__dirname",
+  "ignore": ["node_modules/**", "test/**"],
+  "ext": "js json html",
+  "watch": ["*.js", "lib", "views"],
+  "delay": 1000
+ }

@@ -4,7 +4,11 @@
   "description": "shorten your urls",
   "main": "app.js",
   "scripts": {
-    "test": "test/test.js"
+    "test": "echo \"No test :( \")",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "start": "node app.js",
+    "start:watch": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -17,9 +21,13 @@
   },
   "homepage": "https://github.com/gwendoux/bermuda",
   "dependencies": {
-    "convict": "^0.6.1",
-    "express": "^4.12.3",
-    "moment": "^2.10.2",
-    "mongoose": "^4.0.1"
+    "hapi": "^14.1.0",
+    "inert": "^4.0.1",
+    "joi": "^9.0.4",
+    "mongoose": "^4.5.8"
+  },
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "nodemon": "^1.10.0"
   }
 }
