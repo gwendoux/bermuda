@@ -10,3 +10,5 @@ target
 *.min.js
 *.map
 /dist/
+
+.env
