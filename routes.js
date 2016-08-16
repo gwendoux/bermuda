@@ -28,6 +28,7 @@ module.exports = [
         handler(request, reply) {
             const uniqueID = createHash(hashLen);
             const newRedir = new Redir({
+                slug: `${uniqueID}`,
                 shortUrl: `${baseUrl}/${uniqueID}`,
                 url: request.payload.url,
                 createdAt: new Date()
