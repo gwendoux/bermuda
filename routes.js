@@ -1,7 +1,8 @@
+require('dotenv').config();
 const Joi        = require('joi');
-const createHash = require('./createhash');
+const shortid = require('shortid');
 const hashLen    = 8; /* 8 chars long */
-const baseUrl    = 'http://localhost:3000';
+const baseUrl    = process.env.URL;
 const Redir = require('./schema');
 
 /* EXPORTING THE ROUTES
@@ -26,7 +27,7 @@ module.exports = [
         method: 'POST',
         path: '/new',
         handler(request, reply) {
-            const uniqueID = createHash(hashLen);
+            const uniqueID = shortid.generate();
             const newRedir = new Redir({
                 slug: `${uniqueID}`,
                 shortUrl: `${baseUrl}/${uniqueID}`,

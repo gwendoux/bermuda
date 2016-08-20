@@ -1,11 +1,9 @@
+require('dotenv').config();
 const Hapi     = require('hapi');
 const server   = new Hapi.Server();
 const routes   = require('./routes');
 const mongoose = require('mongoose');
-const mongoUri = 'mongodb://localhost:27017/bermuda';
-
-// If you're testing this locally, change mongoUri to:
-// 'mongodb://localhost:27017/shortio'
+const mongoUri = 'mongodb://localhost/';
 
 /* MONGOOSE AND MONGOLAB
  * ----------------------------------------------------------------------------
