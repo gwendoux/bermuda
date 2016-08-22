@@ -1,7 +1,6 @@
 require('dotenv').config();
 const Joi        = require('joi');
 const shortid = require('shortid');
-const hashLen    = 8; /* 8 chars long */
 const baseUrl    = process.env.URL;
 const Redir = require('./schema');
 
@@ -43,7 +42,7 @@ module.exports = [
             validate: {
                 payload: {
                     url: Joi.string()
-                    .regex(/^https?:\/\/([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/)
+                    .regex(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/)
                     .required()
                 }
             }
