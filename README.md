@@ -13,4 +13,5 @@ Shorten your urls
 * [ ] use .env to handle configuration
 * [ ] better readme
 * [ ] better UI/UX
+* [ ] better front
 * [ ] add tests
